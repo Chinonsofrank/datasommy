@@ -1,0 +1,16 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 02 Oct 2023 15:44:43 at https://www.sommymedia.com.ng/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.sommymedia.com.ng/ -O1 "C:\Users\pc\Downloads\mywebsite\data" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:45:07	Error: 	"Not Found" (404) at link https://www.sommymedia.com.ng/static/landing/images/input-envelope.png (from https://www.sommymedia.com.ng/static/landing/css/style.css)
+15:45:10	Error: 	"Not Found" (404) at link https://www.sommymedia.com.ng/ionicons@5.5.2/dist/ionicons/ionicons.js (from https://www.sommymedia.com.ng/login/)
+15:45:10	Error: 	"Not Found" (404) at link https://www.sommymedia.com.ng/signup/url_string (from https://www.sommymedia.com.ng/signup/)
+15:45:11	Error: 	"Not Found" (404) at link https://www.sommymedia.com.ng/ionicons@4.5.10-0/dist/css/ionicons.min.css (from https://www.sommymedia.com.ng/static/dash/css/style.css)
+15:45:11	Error: 	"Not Found" (404) at link https://www.sommymedia.com.ng/css.css (from https://www.sommymedia.com.ng/static/dash/css/style.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 27 seconds : 45 links scanned, 39 files written (1778041 bytes overall) [752019 bytes received at 27852 bytes/sec], 1450480 bytes transferred using HTTP compression in 32 files, ratio 27%, 5.0 requests per connection
+(5 errors, 0 warnings, 0 messages)

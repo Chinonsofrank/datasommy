@@ -1,0 +1,192 @@
+
+
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from www.sommymedia.com.ng/login/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Oct 2023 22:44:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>SommyMedia</title>
+    
+    <link rel="icon" type="image/png" href="../static/dash/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/dash/img/icon/192x192.png">
+    <link rel="stylesheet" href="../static/dash/css/style.css">
+
+    
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.css" integrity="sha512-DIW4FkYTOxjCqRt7oS9BFO+nVOwDL4bzukDyDtMO7crjUZhwpyrWBFroq+IqRe6VnJkTpRAS6nhDvf0w+wHmxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" integrity="sha512-O03ntXoVqaGUTAeAmvQ2YSzkCvclZEcPQu1eqloPaHfJ5RuNGiS4l+3duaidD801P50J28EHyonCV06CUlTSag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../static/dashboard/js/jquery-3.6.0.min.js"></script>
+    <link href="../static/dashboard/css/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <img src="../static/dash/img/loading-icon.png" alt="icon" class="loading-icon">
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader no-border transparent position-absolute">
+        <div class="left">
+            <a href="#" class="headerButton goBack">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle"></div>
+        <div class="right">
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <div class="section mt-2 text-center">
+            <h1>Log in</h1>
+            <h4>Fill the form to log in</h4>
+        </div>
+        <div class="section mb-5 p-2">
+            <input type="hidden" name="csrfmiddlewaretoken" value="Tp6ctiiZikd5cqW4LLmEapZpXKnLXZX0e4Zan0HqpbTDoeEIBFYnR8LK8HKIiXpU">
+            <form action="#">
+                <div class="card">
+                    <div class="card-body pb-1">
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="email1">Username</label>
+                                <input type="email" class="form-control" id="login_username" placeholder="Enter Username">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="password1">Password</label>
+                                <input type="password" class="form-control" id="login_password" autocomplete="off" placeholder="Enter password">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-links mt-2">
+                    <div>
+                        <a href="../signup/index.html">Register Now</a>
+                    </div>
+                    <div><a href="../forget-password/index.html" >Forgot Password?</a></div>
+                </div>
+
+                <div class="form-button-group  transparent">
+                    <button type="button" id="signin_button" class="btn btn-primary btn-block btn-lg">Log in</button>
+                </div>
+                <div class="form-button-group  transparent" id="checking_button" hidden>
+                    <button type="button" id="" class="btn btn-primary btn-block btn-lg">Checking Credentials..</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <!-- * App Capsule -->
+
+
+
+    <!-- ========= JS Files =========  -->
+    <!-- Bootstrap -->
+    <script src="../static/dash/js/lib/bootstrap.bundle.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="../ionicons%405.5.2/dist/ionicons/ionicons.html"></script>
+    <!-- Splide -->
+    <script src="../static/dash/js/plugins/splide/splide.min.js"></script>
+    <!-- Base Js File -->
+    <script src="../static/dash/js/base.js"></script>
+
+
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.js" integrity="sha512-OmBbzhZ6lgh87tQFDVBHtwfi6MS9raGmNvUNTjDIBb/cgv707v9OuBVpsN6tVVTLOehRFns+o14Nd0/If0lE/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+    
+
+    <script>
+        $(document).ready(function () {
+
+            login();
+          
+            function login() {
+              $(document).on("click", "#signin_button", function () {
+               
+          
+                let username = $("#login_username").val();
+                let password = $("#login_password").val();
+                let csrftoken = $("[name=csrfmiddlewaretoken]").val();
+                console.log(username)
+                if (username.length > 1) {
+                  if (password.length != 0) {
+                    
+                      $.ajax({
+                        type: "POST",
+                        url: "/login/",
+                        data: { username: username, password: password },
+                        headers: { "X-CSRFToken": csrftoken },
+                        cache: false,
+                        dataType: "JSON",
+                        success: function (response) {
+                          if (response.code == 200 ){
+                              window.location.href = response.success
+                          }else{
+                           iziToast.error({
+                              title: "Access Denied - ",
+                              position: "topRight",
+                              message: response.error,
+                            });
+                            $("#signin_button").show();
+                            $("#checking_button").attr('hidden', 'hidden');
+                          }
+                        },
+                        beforeSend: function () {
+                            $("#signin_button").hide();
+                            $("#checking_button").removeAttr('hidden', true);
+
+                          },
+                        error: function (response) { },
+                      });
+                     }else {
+                      iziToast.error({
+                        title: "Error",
+                        position: "topRight",
+                        message: "Please input a valid password",
+                      });
+                    }
+                  
+                }else {
+                  iziToast.error({
+                    title: "Error",
+                    position: "topRight",
+                    message: "Please input a valid Username",
+                  });
+                }
+          
+              });
+            }
+          });
+    </script>
+
+
+</body>
+
+
+<!-- Mirrored from www.sommymedia.com.ng/login/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Oct 2023 22:45:06 GMT -->
+</html>
